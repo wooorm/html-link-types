@@ -1,4 +1,4 @@
-# html-link-types [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# html-link-types [![Build Status][build-badge]][build-page]
 
 List of link types as used in HTML (for example, in `link[rel]`).
 From [mdn][].
@@ -63,10 +63,6 @@ Yields:
 [build-badge]: https://img.shields.io/travis/wooorm/html-link-types.svg
 
 [build-page]: https://travis-ci.org/wooorm/html-link-types
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/html-link-types.svg
-
-[coverage-page]: https://codecov.io/github/wooorm/html-link-types?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
