@@ -11,9 +11,6 @@ From [mdn][].
 npm install html-link-types
 ```
 
-**html-link-types** is also available as an AMD, CommonJS, and globals module,
-[uncompressed and compressed][releases].
-
 ## Usage
 
 ```javascript
@@ -72,8 +69,6 @@ Yields:
 [coverage-page]: https://codecov.io/github/wooorm/html-link-types?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/html-link-types/releases
 
 [license]: LICENSE
 
