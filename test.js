@@ -1,39 +1,22 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module html-link-types
- * @fileoverview Test suite for `html-link-types`.
- */
-
 'use strict';
 
-/* eslint-env node */
-
-/*
- * Module dependencies.
- */
-
+/* Dependencies. */
+var assert = require('assert');
 var test = require('tape');
 var htmlLinkTypes = require('./index.js');
 
-/*
- * Tests.
- */
-
+/* Tests. */
 test('htmlLinkTypes', function (t) {
-    t.ok(
-        Array.isArray(htmlLinkTypes),
-        'should be an `array`'
-    );
+  t.ok(
+    Array.isArray(htmlLinkTypes),
+    'should be an `array`'
+  );
 
-    htmlLinkTypes.forEach(function (vendor) {
-        t.equal(
-            typeof vendor,
-            'string',
-            '`' + vendor + '` should be a string'
-        );
+  t.doesNotThrow(function () {
+    htmlLinkTypes.list.forEach(function (type) {
+      assert(typeof type, 'string', '`' + type + '` should be string');
     });
+  }, 'should be all `string`');
 
-    t.end();
+  t.end();
 });

@@ -1,7 +1,5 @@
 # html-link-types [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
 
-<!--lint ignore no-html-->
-
 List of link types as used in HTML (for example, in `link[rel]`).
 From [mdn][].
 
@@ -17,8 +15,6 @@ npm install html-link-types
 [uncompressed and compressed][releases].
 
 ## Usage
-
-Dependencies:
 
 ```javascript
 var htmlLinkTypes = require('html-link-types');
