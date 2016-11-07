@@ -3,7 +3,7 @@
 /* Dependencies. */
 var assert = require('assert');
 var test = require('tape');
-var htmlLinkTypes = require('./index.js');
+var htmlLinkTypes = require('./');
 
 /* Tests. */
 test('htmlLinkTypes', function (t) {
@@ -13,7 +13,7 @@ test('htmlLinkTypes', function (t) {
   );
 
   t.doesNotThrow(function () {
-    htmlLinkTypes.list.forEach(function (type) {
+    htmlLinkTypes.forEach(function (type) {
       assert(typeof type, 'string', '`' + type + '` should be string');
     });
   }, 'should be all `string`');

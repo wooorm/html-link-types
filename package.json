@@ -10,20 +10,17 @@
     "type",
     "rel"
   ],
-  "dependencies": {},
-  "files": [
-    "index.js",
-    "index.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/html-link-types.git"
-  },
+  "repository": "https://github.com/wooorm/html-link-types",
   "bugs": "https://github.com/wooorm/html-link-types/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^13.0.0",
     "esmangle": "^1.0.1",
@@ -35,7 +32,7 @@
   },
   "scripts": {
     "build-md": "remark . --quiet --frail --output",
-    "build-bundle": "browserify index.js --bare -s htmlLinkTypes > html-link-types.js",
+    "build-bundle": "browserify index.json --bare -s htmlLinkTypes > html-link-types.js",
     "build-mangle": "esmangle html-link-types.js > html-link-types.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
     "lint": "xo",
