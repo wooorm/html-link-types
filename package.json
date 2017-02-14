@@ -22,7 +22,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^13.0.0",
+    "browserify": "^14.1.0",
     "esmangle": "^1.0.1",
     "remark-cli": "^2.1.0",
     "remark-preset-wooorm": "^1.0.0",
