@@ -1,7 +1,11 @@
 # html-link-types [![Build Status][build-badge]][build-page]
 
-List of link types as used in HTML (for example, in `link[rel]`).
+List of link types as specced in HTML (for example, in `link[rel]`).
 From [mdn][].
+
+See [`link-rel`][link-rel] for a list with MicroFormats extensions on `link`
+elements, and [`a-rel`][a-rel] for a list with MicroFormats extensions on
+`a` and `area` elements.
 
 ## Installation
 
@@ -71,3 +75,7 @@ Yields:
 [author]: http://wooorm.com
 
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
+
+[link-rel]: https://github.com/wooorm/link-rel
+
+[a-rel]: https://github.com/wooorm/a-rel
