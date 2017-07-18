@@ -36,8 +36,10 @@ Yields:
   'index',
   'last',
   'license',
+  'manifest',
   'next',
   'nofollow',
+  'noopener',
   'noreferrer',
   'pingback',
   'preconnect',
@@ -46,8 +48,8 @@ Yields:
   'prerender',
   'prev',
   'search',
-  'stylesheet',
   'sidebar',
+  'stylesheet',
   'tag',
   'up' ]
 ```

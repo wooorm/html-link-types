@@ -11,8 +11,10 @@
   "index",
   "last",
   "license",
+  "manifest",
   "next",
   "nofollow",
+  "noopener",
   "noreferrer",
   "pingback",
   "preconnect",
@@ -21,8 +23,8 @@
   "prerender",
   "prev",
   "search",
-  "stylesheet",
   "sidebar",
+  "stylesheet",
   "tag",
   "up"
 ]
