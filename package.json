@@ -22,18 +22,25 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "bail": "^1.0.2",
     "browserify": "^14.1.0",
+    "concat-stream": "^1.6.0",
     "esmangle": "^1.0.1",
+    "hast-util-select": "^1.0.1",
+    "hast-util-to-string": "^1.0.0",
+    "rehype-parse": "^4.0.0",
     "remark-cli": "^3.0.0",
     "remark-preset-wooorm": "^3.0.0",
     "tape": "^4.4.0",
+    "unified": "^6.1.5",
     "xo": "^0.18.0"
   },
   "scripts": {
     "build-md": "remark . -qfo",
+    "build-generate": "node build",
     "build-bundle": "browserify index.json --bare -s htmlLinkTypes > html-link-types.js",
     "build-mangle": "esmangle html-link-types.js > html-link-types.min.js",
-    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
+    "build": "npm run build-generate && npm run build-md && npm run build-bundle && npm run build-mangle",
     "lint": "xo",
     "test-api": "node test.js",
     "test": "npm run build && npm run lint && npm run test-api"
