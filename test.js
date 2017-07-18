@@ -1,11 +1,9 @@
 'use strict';
 
-/* Dependencies. */
 var assert = require('assert');
 var test = require('tape');
 var htmlLinkTypes = require('./');
 
-/* Tests. */
 test('htmlLinkTypes', function (t) {
   t.ok(
     Array.isArray(htmlLinkTypes),
