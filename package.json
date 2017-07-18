@@ -49,7 +49,7 @@
     "space": true,
     "esnext": false,
     "ignores": [
-      "html-element-attributes.js"
+      "html-link-types.js"
     ]
   },
   "remarkConfig": {
