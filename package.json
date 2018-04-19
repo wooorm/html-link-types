@@ -10,7 +10,7 @@
     "type",
     "rel"
   ],
-  "repository": "https://github.com/wooorm/html-link-types",
+  "repository": "wooorm/html-link-types",
   "bugs": "https://github.com/wooorm/html-link-types/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
