@@ -18,7 +18,9 @@ npm install html-link-types
 ## Usage
 
 ```javascript
-var htmlLinkTypes = require('html-link-types');
+var htmlLinkTypes = require('html-link-types')
+
+console.log(htmlLinkTypes)
 ```
 
 Yields:

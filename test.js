@@ -1,20 +1,17 @@
-'use strict';
+'use strict'
 
-var assert = require('assert');
-var test = require('tape');
-var htmlLinkTypes = require('.');
+var assert = require('assert')
+var test = require('tape')
+var htmlLinkTypes = require('.')
 
-test('htmlLinkTypes', function (t) {
-  t.ok(
-    Array.isArray(htmlLinkTypes),
-    'should be an `array`'
-  );
+test('htmlLinkTypes', function(t) {
+  t.ok(Array.isArray(htmlLinkTypes), 'should be an `array`')
 
-  t.doesNotThrow(function () {
-    htmlLinkTypes.forEach(function (type) {
-      assert(typeof type, 'string', '`' + type + '` should be string');
-    });
-  }, 'should be all `string`');
+  t.doesNotThrow(function() {
+    htmlLinkTypes.forEach(function(type) {
+      assert(typeof type, 'string', '`' + type + '` should be string')
+    })
+  }, 'should be all `string`')
 
-  t.end();
-});
+  t.end()
+})
