@@ -9,7 +9,7 @@ var unified = require('unified');
 var parse = require('rehype-parse');
 var select = require('hast-util-select');
 var toString = require('hast-util-to-string');
-var list = require('./');
+var list = require('.');
 
 https.get('https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types', function (res) {
   res.pipe(concat(onconcat)).on('error', bail);

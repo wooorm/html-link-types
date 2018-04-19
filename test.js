@@ -2,7 +2,7 @@
 
 var assert = require('assert');
 var test = require('tape');
-var htmlLinkTypes = require('./');
+var htmlLinkTypes = require('.');
 
 test('htmlLinkTypes', function (t) {
   t.ok(
