@@ -93,7 +93,7 @@ Yields:
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
 
