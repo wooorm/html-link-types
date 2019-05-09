@@ -38,7 +38,7 @@
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-bundle": "browserify index.json --bare -s htmlLinkTypes > html-link-types.js",
     "build-mangle": "esmangle html-link-types.js > html-link-types.min.js",
     "build": "npm run build-bundle && npm run build-mangle",
