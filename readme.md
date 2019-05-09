@@ -1,4 +1,8 @@
-# html-link-types [![Build Status][build-badge]][build-page]
+# html-link-types
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 List of link types as specced in HTML (for example, in `link[rel]`).
 From [mdn][].
@@ -87,7 +91,15 @@ Yields:
 
 [build-badge]: https://img.shields.io/travis/wooorm/html-link-types.svg
 
-[build-page]: https://travis-ci.org/wooorm/html-link-types
+[build]: https://travis-ci.org/wooorm/html-link-types
+
+[downloads-badge]: https://img.shields.io/npm/dm/html-link-types.svg
+
+[downloads]: https://www.npmjs.com/package/html-link-types
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/html-link-types.svg
+
+[size]: https://bundlephobia.com/result?p=html-link-types
 
 [npm]: https://docs.npmjs.com/cli/install
 
