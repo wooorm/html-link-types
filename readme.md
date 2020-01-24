@@ -8,20 +8,20 @@ List of link types as specced in HTML (for example, in `link[rel]`).
 From [mdn][].
 
 See [`link-rel`][link-rel] for a list with MicroFormats extensions on `link`
-elements, and [`a-rel`][a-rel] for a list with MicroFormats extensions on
-`a` and `area` elements.
+elements, and [`a-rel`][a-rel] for a list with MicroFormats extensions on `a`
+and `area` elements.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install html-link-types
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var htmlLinkTypes = require('html-link-types')
 
 console.log(htmlLinkTypes)
