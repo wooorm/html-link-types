@@ -15,14 +15,12 @@ https.get(
   onconnection
 )
 
-function onconnection(res) {
-  res.pipe(concat(onconcat)).on('error', bail)
+function onconnection(response) {
+  response.pipe(concat(onconcat)).on('error', bail)
 }
 
 function onconcat(buf) {
-  var tree = unified()
-    .use(parse)
-    .parse(buf)
+  var tree = unified().use(parse).parse(buf)
 
   select.selectAll('.standard-table td:first-child code', tree).forEach(each)
 
