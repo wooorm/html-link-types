@@ -8,7 +8,7 @@ test('htmlLinkTypes', function (t) {
   t.doesNotThrow(function () {
     var index = -1
     while (++index < htmlLinkTypes.length) {
-      assert(
+      assert.equal(
         typeof htmlLinkTypes[index],
         'string',
         '`' + htmlLinkTypes[index] + '` should be string'
