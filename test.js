@@ -1,8 +1,6 @@
-'use strict'
-
-var assert = require('assert')
-var test = require('tape')
-var htmlLinkTypes = require('.')
+import assert from 'assert'
+import test from 'tape'
+import {htmlLinkTypes} from './index.js'
 
 test('htmlLinkTypes', function (t) {
   t.ok(Array.isArray(htmlLinkTypes), 'should be an `array`')

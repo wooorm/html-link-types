@@ -13,6 +13,9 @@ and `area` elements.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -22,7 +25,7 @@ npm install html-link-types
 ## Use
 
 ```js
-var htmlLinkTypes = require('html-link-types')
+import {htmlLinkTypes} from 'html-link-types'
 
 console.log(htmlLinkTypes)
 ```
@@ -62,9 +65,12 @@ Yields:
 
 ## API
 
+This package exports the following identifiers: `htmlLinkTypes`.
+There is no default export.
+
 ### `htmlLinkTypes`
 
-`Array.<string>` — List of lower-case types.
+`string[]` — List of lowercase types.
 
 ## Related
 

@@ -1,14 +1,12 @@
-'use strict'
-
-var fs = require('fs')
-var https = require('https')
-var bail = require('bail')
-var concat = require('concat-stream')
-var unified = require('unified')
-var parse = require('rehype-parse')
-var select = require('hast-util-select')
-var toString = require('hast-util-to-string')
-var list = require('.')
+import fs from 'fs'
+import https from 'https'
+import bail from 'bail'
+import concat from 'concat-stream'
+import unified from 'unified'
+import parse from 'rehype-parse'
+import select from 'hast-util-select'
+import toString from 'hast-util-to-string'
+import {htmlLinkTypes} from './index.js'
 
 https.get(
   'https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types',
@@ -28,10 +26,16 @@ function onconcat(buf) {
   while (++index < nodes.length) {
     data = toString(nodes[index])
 
-    if (data && !list.includes(data)) {
-      list.push(data)
+    if (data && !htmlLinkTypes.includes(data)) {
+      htmlLinkTypes.push(data)
     }
   }
 
-  fs.writeFile('index.json', JSON.stringify(list.sort(), null, 2) + '\n', bail)
+  fs.writeFile(
+    'index.js',
+    'export var htmlLinkTypes = ' +
+      JSON.stringify(htmlLinkTypes.sort(), null, 2) +
+      '\n',
+    bail
+  )
 }
