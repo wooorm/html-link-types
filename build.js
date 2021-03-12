@@ -21,16 +21,17 @@ function onconnection(response) {
 
 function onconcat(buf) {
   var tree = unified().use(parse).parse(buf)
+  var nodes = select.selectAll('.standard-table td:first-child code', tree)
+  var index = -1
+  var data
 
-  select.selectAll('.standard-table td:first-child code', tree).forEach(each)
+  while (++index < nodes.length) {
+    data = toString(nodes[index])
+
+    if (data && !list.includes(data)) {
+      list.push(data)
+    }
+  }
 
   fs.writeFile('index.json', JSON.stringify(list.sort(), null, 2) + '\n', bail)
-}
-
-function each(node) {
-  var data = toString(node)
-
-  if (data && !list.includes(data)) {
-    list.push(data)
-  }
 }
