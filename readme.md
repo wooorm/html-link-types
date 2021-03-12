@@ -89,9 +89,9 @@ Yields:
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/html-link-types.svg
+[build-badge]: https://github.com/wooorm/html-link-types/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/html-link-types
+[build]: https://github.com/wooorm/html-link-types/actions
 
 [downloads-badge]: https://img.shields.io/npm/dm/html-link-types.svg
 
