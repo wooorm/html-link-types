@@ -1,11 +1,11 @@
-import fs from 'fs'
-import https from 'https'
-import bail from 'bail'
+import fs from 'node:fs'
+import https from 'node:https'
+import {bail} from 'bail'
 import concat from 'concat-stream'
-import unified from 'unified'
+import {unified} from 'unified'
 import parse from 'rehype-parse'
-import select from 'hast-util-select'
-import toString from 'hast-util-to-string'
+import {selectAll} from 'hast-util-select'
+import {toString} from 'hast-util-to-string'
 import {htmlLinkTypes} from './index.js'
 
 https.get(
@@ -19,7 +19,7 @@ function onconnection(response) {
 
 function onconcat(buf) {
   var tree = unified().use(parse).parse(buf)
-  var nodes = select.selectAll('.standard-table td:first-child code', tree)
+  var nodes = selectAll('.standard-table td:first-child code', tree)
   var index = -1
   var data
 
