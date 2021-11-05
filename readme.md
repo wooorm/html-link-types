@@ -4,7 +4,7 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-List of link types as specced in HTML (for example, in `link[rel]`).
+List of link types as specified by HTML (for example, in `link[rel]`).
 From [mdn][].
 
 See [`link-rel`][link-rel] for a list with MicroFormats extensions on `link`

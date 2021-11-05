@@ -1,3 +1,8 @@
+/**
+ * List of link types as specified by HTML.
+ *
+ * @type {Array<string>}
+ */
 export const htmlLinkTypes = [
   'alternate',
   'archives',

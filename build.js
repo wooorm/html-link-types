@@ -17,10 +17,9 @@ https.get(
           const tree = unified().use(rehypeParse).parse(buf)
           const nodes = selectAll('.standard-table td:first-child code', tree)
           let index = -1
-          let data
 
           while (++index < nodes.length) {
-            data = toString(nodes[index])
+            const data = toString(nodes[index])
 
             if (data && !htmlLinkTypes.includes(data)) {
               htmlLinkTypes.push(data)
@@ -29,9 +28,16 @@ https.get(
 
           fs.writeFile(
             'index.js',
-            'export const htmlLinkTypes = ' +
-              JSON.stringify(htmlLinkTypes.sort(), null, 2) +
-              '\n',
+            [
+              '/**',
+              ' * List of link types as specified by HTML.',
+              ' *',
+              ' * @type {Array<string>}',
+              ' */',
+              'export const htmlLinkTypes = ' +
+                JSON.stringify(htmlLinkTypes.sort(), null, 2),
+              ''
+            ].join('\n'),
             bail
           )
         })
