@@ -1,4 +1,4 @@
-export var htmlLinkTypes = [
+export const htmlLinkTypes = [
   'alternate',
   'archives',
   'author',
