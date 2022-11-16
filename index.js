@@ -19,6 +19,7 @@ export const htmlLinkTypes = [
   'last',
   'license',
   'manifest',
+  'me',
   'modulepreload',
   'next',
   'nofollow',
